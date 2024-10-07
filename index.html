@@ -25,7 +25,8 @@
         function addSheep() {
             const sheepContainer = document.getElementById("sheepContainer");
             const img = document.createElement("img");
-            img.src = "https://via.placeholder.com/100x100.png?text=Sheep";
+            const randomIndex = Math.floor(Math.random() * 5) + 1; // Assuming there are 5 images
+            img.src = `img/sheep${randomIndex}.webp`;
             img.alt = "Sheep";
             img.classList.add("sheep");
             sheepContainer.appendChild(img);
